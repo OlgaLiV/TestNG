@@ -22,9 +22,11 @@ public class SolutionWithHardAssertion {
 
 	@Test()
 	public void titleValidation() {
-		String expectedTitle = "Human Management System";
+		String expectedTitle = "Human Management Systems";
 		String actualTitle = driver.getTitle();// Human Management System
 		Assert.assertEquals(actualTitle, expectedTitle);
+		System.out.println("--- Code after assertion ---");
+		System.out.println("--- End of test titleValidation ---");
 	}
 	
 	@Test
@@ -33,7 +35,7 @@ public class SolutionWithHardAssertion {
 		Assert.assertTrue(element.isDisplayed());
 	}
 	
-	@Test
+	//@Test
 	public void loginPannelText() {
 		String expectedText = "LOGIN Panels";
 		WebElement loginForm = driver.findElement(By.id("logInPanelHeading"));

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.syntax.class02.SolutionWithHardAssertion">
+      <class name="com.syntax.class02.SoftAssertion">
         <methods>
           <include name="closeBrowser"/>
-          <include name="loginPannelText"/>
+          <include name="validLogin"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.syntax.class02.SolutionWithHardAssertion -->
+      </class> <!-- com.syntax.class02.SoftAssertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
