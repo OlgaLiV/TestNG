@@ -26,7 +26,7 @@ public class SoftAssertion {
 	}
 
 	@Test
-	public void validLogin() {
+	public void invalidLogin() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPassword")).sendKeys("gigigigi");
 		driver.findElement(By.cssSelector("input#btnLogin")).click();
@@ -47,6 +47,8 @@ public class SoftAssertion {
 		
 		System.out.println("I am a text after assertion");
 		System.out.println("--- This is the end of the test ---");
+		
+		// to throw all failed assertions
 		softAssertion.assertAll();
 		
 		

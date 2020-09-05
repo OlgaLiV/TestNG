@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.syntax.class02.SoftAssertion">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- com.syntax.class02.SoftAssertion -->
+      <class name="com.syntax.class02.AddEmployeeTask">
+        <methods>
+          <include name="verifyInfo"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.syntax.class02.AddEmployeeTask -->
+      <class name="com.syntax.class02.Dependancy">
+        <methods>
+          <include name="validLogin"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- com.syntax.class02.Dependancy -->
+      <class name="com.syntax.class02.IssueWithoutAssertion">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="validLogin"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.syntax.class02.IssueWithoutAssertion -->
+      <class name="com.syntax.class02.SolutionWithHardAssertion">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="titleValidation"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.syntax.class02.SolutionWithHardAssertion -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

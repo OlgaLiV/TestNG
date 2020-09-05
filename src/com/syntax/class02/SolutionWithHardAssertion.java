@@ -20,7 +20,7 @@ public class SolutionWithHardAssertion {
 		driver.manage().window().maximize();
 	}
 
-	@Test()
+	@Test(groups = "regression")
 	public void titleValidation() {
 		String expectedTitle = "Human Management Systems";
 		String actualTitle = driver.getTitle();// Human Management System
@@ -29,13 +29,13 @@ public class SolutionWithHardAssertion {
 		System.out.println("--- End of test titleValidation ---");
 	}
 	
-	@Test
+	@Test(groups = "regression")
 	public void logoValidation() {
 		WebElement element = driver.findElement(By.xpath("//div[@id='divLogo']/img"));
 		Assert.assertTrue(element.isDisplayed());
 	}
 	
-	//@Test
+	@Test(groups = "regression")
 	public void loginPannelText() {
 		String expectedText = "LOGIN Panels";
 		WebElement loginForm = driver.findElement(By.id("logInPanelHeading"));

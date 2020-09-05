@@ -20,7 +20,7 @@ public class IssueWithoutAssertion {
 		driver.manage().window().maximize();
 	}
 
-	@Test()
+	@Test(groups = "smoke")
 	public void validLogin() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPasswords")).sendKeys("Hum@nhrm123");
@@ -34,7 +34,7 @@ public class IssueWithoutAssertion {
 
 	}
 	
-	@Test( )
+	@Test(groups = "regression")
 	public void titleValidation() {
 		String expectedTitle = "Human Management Systems";
 		String actualTitle = driver.getTitle();//Human Management System
