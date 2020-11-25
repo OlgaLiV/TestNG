@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class TestNGDependencies {
 	
-	@Test
+	@Test(groups = "regression")
 	public void login() {
 		System.out.println("Test that logges in into the application and has login steps");
 	}

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Login_Test_Suite">
-              <span class="suite-name border-passed">Login Test Suite</span>
+              <span class="suite-name border-failed">Login Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Login_Test_Suite" class="hide-methods failed suite-Login_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Login_Test_Suite -->
+                      <a href="#" panel-name="suite-Login_Test_Suite" class="show-methods failed suite-Login_Test_Suite"> (show)</a> <!-- show-methods failed suite-Login_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Login_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class01.TestCasesHRMS" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Login_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,27 +118,17 @@
                     <div class="method-list-content passed suite-Login_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class03.LoginWithDataProvider" hash-for-method="multiLogin(MichaelRud, MykhailolRud#12345, Michael, Rud)">multiLogin(MichaelRud, MykhailolRud#12345, Michael, Rud)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class01.TestNGDependencies" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class03.LoginWithDataProvider" hash-for-method="multiLogin(AlexRud, AlexRud#12345, Alex, Rud)">multiLogin(AlexRud, AlexRud#12345, Alex, Rud)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class01.TaskTestNG" hash-for-method="sayHaveAGoodDay">sayHaveAGoodDay</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class03.LoginWithDataProvider" hash-for-method="multiLogin(NadiiaL, NadiiaL$12345, Nadia, Liv)">multiLogin(NadiiaL, NadiiaL$12345, Nadia, Liv)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class03.LoginWithDataProvider" hash-for-method="multiLogin(OlgaL, Lytvynenko1@, Olga, L)">multiLogin(OlgaL, Lytvynenko1@, Olga, L)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class03.LoginWithDataProvider" hash-for-method="multiLogin(KokaL, Kokaytvyn$12345, Koka, Liv)">multiLogin(KokaL, Kokaytvyn$12345, Koka, Liv)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Login_Test_Suite" title="com.syntax.class01.TaskWithAnnotations" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Login_Test_Suite -->
@@ -139,50 +143,67 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Login_Test_Suite" class="panel Login_Test_Suite">
-          <div class="suite-Login_Test_Suite-class-passed">
+          <div class="suite-Login_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.syntax.class03.LoginWithDataProvider</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.syntax.class01.TestCasesHRMS</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="multiLogin(MichaelRud, MykhailolRud#12345, Michael, Rud)">
-                  </a> <!-- multiLogin(MichaelRud, MykhailolRud#12345, Michael, Rud) -->
-                  <span class="method-name">multiLogin</span>
-                  <span class="parameters">(MichaelRud, MykhailolRud#12345, Michael, Rud)</span>
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.syntax.class01.TestCasesHRMS.validLogin(TestCasesHRMS.java:30)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login_Test_Suite-class-failed -->
+          <div class="suite-Login_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.syntax.class01.TestNGDependencies</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="multiLogin(AlexRud, AlexRud#12345, Alex, Rud)">
-                  </a> <!-- multiLogin(AlexRud, AlexRud#12345, Alex, Rud) -->
-                  <span class="method-name">multiLogin</span>
-                  <span class="parameters">(AlexRud, AlexRud#12345, Alex, Rud)</span>
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login_Test_Suite-class-passed -->
+          <div class="suite-Login_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.syntax.class01.TaskTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="multiLogin(NadiiaL, NadiiaL$12345, Nadia, Liv)">
-                  </a> <!-- multiLogin(NadiiaL, NadiiaL$12345, Nadia, Liv) -->
-                  <span class="method-name">multiLogin</span>
-                  <span class="parameters">(NadiiaL, NadiiaL$12345, Nadia, Liv)</span>
+                  <a name="sayHaveAGoodDay">
+                  </a> <!-- sayHaveAGoodDay -->
+                  <span class="method-name">sayHaveAGoodDay</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login_Test_Suite-class-passed -->
+          <div class="suite-Login_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.syntax.class01.TaskWithAnnotations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="multiLogin(OlgaL, Lytvynenko1@, Olga, L)">
-                  </a> <!-- multiLogin(OlgaL, Lytvynenko1@, Olga, L) -->
-                  <span class="method-name">multiLogin</span>
-                  <span class="parameters">(OlgaL, Lytvynenko1@, Olga, L)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="multiLogin(KokaL, Kokaytvyn$12345, Koka, Liv)">
-                  </a> <!-- multiLogin(KokaL, Kokaytvyn$12345, Koka, Liv) -->
-                  <span class="method-name">multiLogin</span>
-                  <span class="parameters">(KokaL, Kokaytvyn$12345, Koka, Liv)</span>
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,11 +224,20 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.syntax.class01&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.syntax.class03.LoginWithDataProvider&quot;/&gt;
+      &lt;class name=&quot;com.syntax.class01.HrmsTestCases&quot;/&gt;
+      &lt;class name=&quot;com.syntax.class01.TaskTestNG&quot;/&gt;
+      &lt;class name=&quot;com.syntax.class01.TestCasesHRMS&quot;/&gt;
+      &lt;class name=&quot;com.syntax.class01.TaskWithAnnotations&quot;/&gt;
+      &lt;class name=&quot;com.syntax.class01.TestNGIntro&quot;/&gt;
+      &lt;class name=&quot;com.syntax.class01.DifferentAnnotations&quot;/&gt;
+      &lt;class name=&quot;com.syntax.class01.TestNGDependencies&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Test --&gt;
 &lt;/suite&gt; &lt;!-- Login Test Suite --&gt;
@@ -221,7 +251,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Test (1 class)</span>
+                <span class="test-name">Login Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,10 +262,22 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">smoke</span>
+              <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">multiLogin</span>
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sayHaveAGoodDay</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLogin</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -255,32 +297,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'multiLogin')
-data.setCell(0, 2, 'com.syntax.class03.LoginWithDataProvider')
-data.setCell(0, 3, 3398);
+data.setCell(0, 1, 'sayHaveAGoodDay')
+data.setCell(0, 2, 'com.syntax.class01.TaskTestNG')
+data.setCell(0, 3, 19);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'multiLogin')
-data.setCell(1, 2, 'com.syntax.class03.LoginWithDataProvider')
-data.setCell(1, 3, 3299);
+data.setCell(1, 1, 'validLogin')
+data.setCell(1, 2, 'com.syntax.class01.TestCasesHRMS')
+data.setCell(1, 3, 9);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'multiLogin')
-data.setCell(2, 2, 'com.syntax.class03.LoginWithDataProvider')
-data.setCell(2, 3, 3090);
+data.setCell(2, 1, 'test2')
+data.setCell(2, 2, 'com.syntax.class01.TaskWithAnnotations')
+data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'multiLogin')
-data.setCell(3, 2, 'com.syntax.class03.LoginWithDataProvider')
-data.setCell(3, 3, 3032);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'multiLogin')
-data.setCell(4, 2, 'com.syntax.class03.LoginWithDataProvider')
-data.setCell(4, 3, 2940);
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'com.syntax.class01.TestNGDependencies')
+data.setCell(3, 3, 2);
 window.suiteTableData['Login_Test_Suite']= { tableData: data, tableDiv: 'times-div-Login_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 33 ms</span>
               <div id="times-div-Login_Test_Suite">
               </div> <!-- times-div-Login_Test_Suite -->
             </div> <!-- times-div -->
@@ -295,9 +333,70 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Login_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">13 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.syntax.class01.TestCasesHRMS</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">invalidLogin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.syntax.class01.HrmsTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">titleValidation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.syntax.class01.DifferentAnnotations</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testMethodThree</span>
+                <br/>
+                <span class="ignored-method-name">testMethod</span>
+                <br/>
+                <span class="ignored-method-name">testMethodTwo</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.syntax.class01.TestNGDependencies</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.syntax.class01.TaskTestNG</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">sayGoodMorning</span>
+                <br/>
+                <span class="ignored-method-name">sayHello</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.syntax.class01.TaskWithAnnotations</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.syntax.class01.TestNGIntro</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testTwo</span>
+                <br/>
+                <span class="ignored-method-name">testThree</span>
+                <br/>
+                <span class="ignored-method-name">testFour</span>
+                <br/>
+                <span class="ignored-method-name">testOne</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Login_Test_Suite" class="panel">
@@ -306,67 +405,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.syntax.class03.LoginWithDataProvider</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
+              <div class="chronological-class-name">com.syntax.class01.TaskTestNG</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sayHaveAGoodDay</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">multiLogin(KokaL, Kokaytvyn$12345, Koka, Liv)</span>
-                <span class="method-start">9058 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">12364 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">12623 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntax.class01.TestCasesHRMS</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">multiLogin(MichaelRud, MykhailolRud#12345, Michael, Rud)</span>
-                <span class="method-start">20130 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validLogin</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">23223 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">23384 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntax.class01.TaskWithAnnotations</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">multiLogin(OlgaL, Lytvynenko1@, Olga, L)</span>
-                <span class="method-start">29074 ms</span>
+                <span class="method-name">test2</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">32016 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">32167 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntax.class01.TestNGDependencies</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">multiLogin(AlexRud, AlexRud#12345, Alex, Rud)</span>
-                <span class="method-start">38837 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">50 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">41870 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">42022 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">multiLogin(NadiiaL, NadiiaL$12345, Nadia, Liv)</span>
-                <span class="method-start">48523 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">51923 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

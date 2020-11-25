@@ -1,5 +1,6 @@
 package com.syntax.class04;
 
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -13,10 +14,12 @@ public class Listeners implements ITestListener {
 
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("Test passed " + result.getName());
+		System.out.println("Here will be code that takes screenshot for any passed test cases.......");
 	}
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test failed " + result.getName());
+		System.out.println("Here will be code that takes screenshot for any failed test cases.......");
 	}
 
 	// invoked when we start <test> based on xml file

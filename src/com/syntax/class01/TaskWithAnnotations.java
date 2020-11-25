@@ -20,7 +20,7 @@ public class TaskWithAnnotations {
 		System.out.println("Test 1");
 	}
 	
-	@Test
+	@Test(groups = "regression")
 	public void test2() {
 		System.out.println("Test 2");
 	}

@@ -14,11 +14,11 @@ public class HrmsTestCases {
 	public void openBrowser() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
 		driver = new ChromeDriver();
-		driver.get("http://166.62.36.207/humanresources/symfony/web/index.php/auth/login");
+		driver.get("http://18.232.148.34/humanresources/symfony/web/index.php/auth/login");
 		driver.manage().window().maximize();
 	}
 
-	@Test
+	//@Test(groups = "regression")
 	public void validLogin() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPassword")).sendKeys("Hum@nhrm123");

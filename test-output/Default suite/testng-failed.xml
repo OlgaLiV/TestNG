@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.syntax.class03.LoginWithDataProvider">
+      <class name="com.syntax.class01.TestCasesHRMS">
         <methods>
+          <include name="validLogin"/>
+          <include name="closeBrowser"/>
           <include name="openBrowser"/>
-          <include name="multiLogin" invocation-numbers="4"/>
-          <include name="quitBrowser"/>
+          <include name="invalidLogin"/>
         </methods>
-      </class> <!-- com.syntax.class03.LoginWithDataProvider -->
+      </class> <!-- com.syntax.class01.TestCasesHRMS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -25,7 +25,7 @@ public class SoftAssertion {
 		driver.quit();
 	}
 
-	@Test
+	@Test(groups = "regression")
 	public void invalidLogin() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPassword")).sendKeys("gigigigi");

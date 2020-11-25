@@ -15,7 +15,7 @@ public class TaskTestNG {
 	}
 
 	
-	@Test
+	@Test(groups = "regression")
 	public void sayHaveAGoodDay() {
 		System.out.println("Have a Good Day!!!");
 	}

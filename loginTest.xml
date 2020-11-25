@@ -7,11 +7,11 @@
 	<test thread-count="5" name="Login Test">
 		<groups>
 			<run>
-				<include name="smoke"></include>
+				<include name="regression"></include>
 			</run>
 		</groups>
-		<classes>
-			<class name="com.syntax.class03.LoginWithDataProvider" />
-		</classes>
+		<packages>
+		<package name="com.syntax.class01"/>
+		</packages>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

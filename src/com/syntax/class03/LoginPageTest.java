@@ -28,7 +28,7 @@ public class LoginPageTest {
 		driver.quit();
 	}
 
-	@Test(dataProvider = "getData")
+	@Test(groups = "regression",dataProvider = "getData" )
 	public void multipleLogin(String username, String password, String name) {
 		driver.findElement(By.id("txtUsername")).sendKeys(username);
 		driver.findElement(By.id("txtPassword")).sendKeys(password);
